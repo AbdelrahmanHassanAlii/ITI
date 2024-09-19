@@ -1,35 +1,51 @@
 .class > div {
     color: red;
 }
+/* that will select all div elements which is in an element with class .class */
+/* <element class="class">
+        <div> */
 
 .class + div {
     color: blue;
 }
+/* that will select all div elements which is the first next to an element with class .class */
+/* <element class="class">
+   <div> */
 
 .class ~ div {
     color: green;
 }
+/* that will select all div elements which is next to an element with class .class */
+/* <element class="class">
+   ⋮
+   <div> */
 
 [data-foo = "bar"] {
     color: red;
 }
+/* <element data-foo="bar"> */
 
 [data-foo ~= "bar"] {
     color: blue;    
 }
+/* <element data-foo=" … bar … "> */
 
 [data-foo ^= "bar"] {
     color: green;
 }
+/* <element data-foo="bar…"> */
 
 [data-foo $= "bar"] {
     color: red;
 }
+/* <element data-foo="…bar"> */
 
 [data-foo *= "bar"] {
     color: blue;
 }
+/* <element data-foo="…bar…"> */
 
 [data-foo |= "bar"] {
     color: green;
 }
+/* <element data-foo="bar-…"> */
