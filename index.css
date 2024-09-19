@@ -1,7 +1,7 @@
 .class > div {
     color: red;
 }
-/* that will select all div elements which is in an element with class .class */
+/* that will select all div elements which is the first child of an element with class .class */
 /* <element class="class">
         <div> */
 
