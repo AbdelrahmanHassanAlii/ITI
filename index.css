@@ -1,0 +1,35 @@
+.class > div {
+    color: red;
+}
+
+.class + div {
+    color: blue;
+}
+
+.class ~ div {
+    color: green;
+}
+
+[data-foo = "bar"] {
+    color: red;
+}
+
+[data-foo ~= "bar"] {
+    color: blue;    
+}
+
+[data-foo ^= "bar"] {
+    color: green;
+}
+
+[data-foo $= "bar"] {
+    color: red;
+}
+
+[data-foo *= "bar"] {
+    color: blue;
+}
+
+[data-foo |= "bar"] {
+    color: green;
+}
